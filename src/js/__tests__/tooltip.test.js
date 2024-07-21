@@ -1,4 +1,4 @@
-import { Tooltip } from '../tooltip';
+import Tooltip from '../tooltip';
 
 test('showTooltip adds tooltip to DOM', () => {
   document.body.innerHTML = '<button type="button" class="btn">Click to toggle popover</button>';
