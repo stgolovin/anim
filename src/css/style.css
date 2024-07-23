@@ -6,30 +6,8 @@ body {
 
 .btn {
     color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #4169E1;
+    border-color: #4169E1;
     padding: 15px;
     margin-top: 300px;
-}
-
-.btn:hover {
-    background-color: #c82333;
-    border-color: #bd2130; 
-}
-
-.tooltip {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 999;
-    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.5);
-}
-
-.tooltip-title {
-    margin-bottom: 5px;
-}
-
-.tooltip-message {
-    font-size: 14px;
 }
