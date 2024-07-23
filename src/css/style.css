@@ -1,13 +1,67 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .btn {
     color: #fff;
     background-color: #4169E1;
-    border-color: #4169E1;
-    padding: 15px;
-    margin-top: 300px;
+    border-color: #4169e1c3;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10%;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.collapsible {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 600px;
+    border: 1px solid rgb(65, 63, 63);
+    padding: 0 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.collapsed {
+    animation: collapse 0.5s forwards;
+}
+.expanded {
+    animation: expand 1s forwards ease-in;
+}
+
+@keyframes expand {
+    from {
+        max-height: 0;
+        opacity: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    to {
+        max-height: 1000px;
+        opacity: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@keyframes collapse {
+    from {
+        max-height: 1000px;
+        opacity: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
